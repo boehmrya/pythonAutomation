@@ -21,5 +21,3 @@ outFile.write(text)
 textFile.close()
 outFile.close()
 
-
-
