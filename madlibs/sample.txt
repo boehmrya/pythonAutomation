@@ -1,0 +1,3 @@
+Unix Shell provides various metacharacters which have ADJECTIVE meaning while using them in any Shell Script and causes termination of a word unless quoted.
+For example, ? matches with a single character while VERB files in a directory and an * matches more than ADVERB character.
+Here is a list of NOUN of the shell special characters (also called metacharacters).

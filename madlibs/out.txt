@@ -1,0 +1,1 @@
+Unix Shell provides various metacharacters which have testAdj meaning while using them in any Shell Script and causes termination of a word unless quoted. For example, ? matches with a single character while testVerb files in a directory and an * matches more than testAdverb character. Here is a list of testNoun of the shell special characters (also called metacharacters).
