@@ -5,7 +5,7 @@ f = open('sample.txt')
 contents = f.read()
 words = contents.split()
 
-
+# replace the words
 count = 0
 for w in words:
     if w == 'ADJECTIVE':
@@ -22,7 +22,7 @@ for w in words:
         words[count] = newWord
     count += 1
 
-
+# write the final contents
 newContents = ' '.join(words)
 out = open("out.txt","w")
 out.write(newContents)
