@@ -26,3 +26,7 @@ for w in words:
 newContents = ' '.join(words)
 out = open("out.txt","w")
 out.write(newContents)
+
+# close files
+f.close()
+out.close()

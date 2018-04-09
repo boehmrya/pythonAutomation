@@ -1,7 +1,7 @@
 
 import re
 
-# social security number regex
+# white space regex
 whiteSpaceRegex = re.compile(r'[ \t\n\r\f\v]+')
 
 # open text file
@@ -15,9 +15,8 @@ text = whiteSpaceRegex.sub(" ", text)
 
 # write results to new file
 outFile = open('sampleOut.txt', 'w')
-outFile.write(text) 
+outFile.write(text)
 
 # close files
 textFile.close()
 outFile.close()
-
