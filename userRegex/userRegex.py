@@ -8,9 +8,10 @@ userRegex = re.compile(userRegexString)
 
 # loop through each file in directory and open it
 for filename in os.listdir():
-    f = open(filename)
-    text = f.read()
+    if filename.endswith('.txt'):
+        f = open(filename)
+        text = f.read()
 
-    # find matches pattern and print to screen
-    for groups in userRegex.findall(text):
-    	print(groups)
+        # find matches pattern and print to screen
+        for groups in userRegex.findall(text):
+        	print(groups)
