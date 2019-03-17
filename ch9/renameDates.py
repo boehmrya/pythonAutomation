@@ -1,6 +1,9 @@
 
 import shutil, os, re
 
+'''
+Change American-style dates to european style dates in file names.
+'''
 
 # create a regex that matches files with the American date format
 datePattern = re.compile(r"""^(.*?))    # all text before the date
