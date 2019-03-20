@@ -6,14 +6,14 @@ Change American-style dates to european style dates in file names.
 '''
 
 # create a regex that matches files with the American date format
-datePattern = re.compile(r"""^(.*?))    # all text before the date
+datePattern = re.compile(r"""^(.*?)   # all text before the date
     ((0|1)?\d)-         # one or two digits for the month
     ((0|1|2|3)?\d)-     # one or two digits for the day
     ((19|20)\d\d)       # four digits for the year
     (.*?)$                # all text after the date
     """, re.VERBOSE)
 
-for amerFilename in os.listdire('.'):
+for amerFilename in os.listdir('.'):
     mo = datePattern.search(amerFilename)
 
     if mo == None:
@@ -30,7 +30,7 @@ for amerFilename in os.listdire('.'):
                     yearPart + afterPart
 
     # Get the full, absolute file paths.
-    absWorkingDir = os.path.abspath('.')
+    absWorkingDir = os.path.abspath('sample2')
     amerFilename = os.path.join(absWorkingDir, amerFilename)
     euroFilename = os.path.join(absWorkingDir, euroFilename)
 
